@@ -1,0 +1,26 @@
+{
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "webpack && yarn start today testdir testDIr",
+    "fmt": "eslint --fix '**/*ts' && prettier --write '**/*.{ts,js,json,md}'",
+    "lint:check": "eslint '**/*ts'",
+    "prettier:check": "prettier '**/*.{ts,js,json,md}'"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.17.0",
+    "ts-loader": "^5.4.4",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
